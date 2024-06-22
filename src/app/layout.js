@@ -1,9 +1,9 @@
 "use client"
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/layout/Footer";
+import Footer from "../components/layout/Footer";
 import Navbar from "./../components/layout/Navbar";
-import AppProvider from "@/components/AppContext";
+import AppProvider from "../components/AppContext";
 import { SessionProvider } from "next-auth/react";
 const roboto= Roboto({ subsets: ["latin"],weight: ['400','500','700']});
 
@@ -17,10 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
         <main className="max-w-screen-xl	 mx-auto ">
-         
+         <AppProvider>
+
           <Navbar/>
           {children}
           <Footer/>
+         </AppProvider>
           
           </main>
           </body>

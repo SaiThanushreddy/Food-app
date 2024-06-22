@@ -1,8 +1,8 @@
-import MenuItem from "@/components/menu/MenuItem";
+import MenuItem from "../components/menu/MenuItem";
 import Hero from "../components/layout/Hero"
 import Navbar from "../components/layout/Navbar"
-import HomeMenu from "@/components/layout/Homemenu";
-import SectionHeaders from "@/components/layout/SectionHeaders";
+import HomeMenu from "../components/layout/Homemenu"
+import SectionHeaders from "../components/layout/SectionHeaders";
 
 export default function Home() {
   return (
